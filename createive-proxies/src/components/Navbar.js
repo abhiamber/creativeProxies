@@ -1,0 +1,212 @@
+import React from "react";
+import { Box, Image, Text } from "@chakra-ui/react";
+import creativeproxies from "../Image/creativeproxies.png";
+import Icon from "../Image/Icon.png";
+import discord1 from "../Image/discord1.png";
+
+const Navbar = () => {
+  return (
+    <Box>
+      <Box w="217px" h="33px" position={"absloute"} left="371px" top="13px">
+        <Image
+          position="absolute"
+          width="33px"
+          height="33px"
+          left="371px"
+          top="13px"
+          src={creativeproxies}
+          alt="logo"
+        />
+        <Text
+          position="absolute"
+          width="180px"
+          height="31px"
+          left="408px"
+          top="14px"
+          fontFamily="Figtree"
+          fontStyle="normal"
+          fontWeight="600"
+          fontSize="26px"
+          lineHeight="31px"
+          letterSpacing="-0.02em"
+          color="#111822"
+        >
+          CreativeProxies
+        </Text>
+      </Box>
+      <Box
+        display="flex"
+        flexDirection="row"
+        alignItems="flex-start"
+        padding="0px"
+        gap="30px"
+        position="absolute"
+        width="445px"
+        height="19px"
+        left="619px"
+        top="20px"
+        opacity=" 0.9"
+      >
+        <Box>
+          <Text
+            width="48px"
+            height="19px"
+            fontFamily="Figtree"
+            fontStyle="normal"
+            fontWeight="400"
+            fontSize="16px"
+            lineHeight="19px"
+            letterSpacing="-0.02em"
+            color="#111822"
+            flex="none"
+            order="0"
+            flexGrow="0"
+          >
+            Pricing
+          </Text>
+        </Box>
+        <Box
+          display="flex"
+          flexDirection="row"
+          justifyContent="center"
+          alignItems="center"
+          padding="0px"
+          gap="8px"
+          width="108.5px"
+          height="19px"
+          flex=" none"
+          order="1"
+          flexGrow="0"
+        >
+          <Text
+            width="91px"
+            height="19px"
+            fontFamily="Figtree"
+            fontStyle="normal"
+            fontWeight="400"
+            font-size="16px"
+            lineHeight="19px"
+            letterSpacing="-0.02em"
+            color="#111822"
+            flex=" none"
+            order="0"
+            flexGrow="0"
+          >
+            Explore Tools
+          </Text>
+          <Image
+            width="9.5px"
+            height="5.5px"
+            color="#111822"
+            flex="none"
+            order="1"
+            flexGrow="0"
+            src={Icon}
+            alt="logo"
+          />
+        </Box>
+        <Box
+          display="flex"
+          flexDirection="row"
+          justifyContent="center"
+          alignItems="center"
+          padding="0px"
+          gap="8px"
+          width="90.5px"
+          height="19px"
+          flex=" none"
+          order="2"
+          flexGrow="0"
+        >
+          <Text
+            width="73px"
+            height="19px"
+            fontFamily="Figtree"
+            fontStyle="normal"
+            fontWeight="400"
+            font-size="16px"
+            lineHeight="19px"
+            letterSpacing="-0.02em"
+            color="#111822"
+            flex=" none"
+            order="0"
+            flexGrow="0"
+          >
+            Resources
+          </Text>
+          <Image
+            width="9.5px"
+            height="5.5px"
+            color="#111822"
+            flex="none"
+            order="1"
+            flexGrow="0"
+            src={Icon}
+            alt="logo"
+          />
+        </Box>
+        <Box>
+          <Text
+            width="39px"
+            height="19px"
+            fontFamily="Figtree"
+            fontStyle="normal"
+            fontWeight="400"
+            font-size="16px"
+            lineHeight="19px"
+            letterSpacing="-0.02em"
+            color="#111822"
+            flex=" none"
+            order="3"
+            flexGrow="0"
+          >
+            FAQs
+          </Text>
+        </Box>
+        <Box>
+          <Text
+            width="39px"
+            height="19px"
+            fontFamily="Figtree"
+            fontStyle="normal"
+            fontWeight="400"
+            font-size="16px"
+            lineHeight="19px"
+            letterSpacing="-0.02em"
+            color="#111822"
+            flex=" none"
+            order="4"
+            flexGrow="0"
+          >
+            Blogs
+          </Text>
+        </Box>
+      </Box>
+
+      <Box
+        display="flex"
+        flexDirection="row"
+        alignItems="center"
+        padding="0px"
+        gap="5px"
+        width="108px"
+        height="19px"
+        flex="none"
+        order="0"
+        flexGrow="0"
+      >
+        <Image
+          width="16px"
+          height="16px"
+          flex="none"
+          order="0"
+          flexGrow="0"
+          src={discord1}
+          alt="discrd"
+        />
+      </Box>
+    </Box>
+  );
+};
+
+export default Navbar;
