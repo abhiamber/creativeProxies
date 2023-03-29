@@ -1,12 +1,31 @@
 import React from "react";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Image,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
 import creativeproxies from "../Image/creativeproxies.png";
 import Icon from "../Image/Icon.png";
 import discord1 from "../Image/discord1.png";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+} from "@chakra-ui/react";
+import ham from "../Image/ham.png";
+
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   let navigate = useNavigate();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   let handleClick = () => {
     navigate("/");
@@ -19,6 +38,82 @@ const Navbar = () => {
       w="80%"
       m="auto"
     >
+      <Box
+        display={{ lg: "none", md: "flex", sm: "flex", base: "flex" }}
+        pt="10px"
+        pb="10px"
+      >
+        <Box
+          h="33px"
+          display={"flex"}
+          justifyContent="center"
+          onClick={handleClick}
+          cursor="pointer"
+        >
+          <Image width="17%" height="33px" src={creativeproxies} alt="logo" />
+          <Text
+            height="31px"
+            fontWeight="600"
+            fontSize="22px"
+            lineHeight="31px"
+            color="#111822"
+          >
+            CreativeProxies
+          </Text>
+        </Box>
+        <Box
+          padding="10px"
+          width="30%"
+          m="auto"
+          mr="3px"
+          height="39px"
+          background="#077BFF"
+          borderRadius="5px"
+        >
+          <Text
+            height="19px"
+            fontWeight="400"
+            fontSize="16px"
+            lineHeight="19px"
+            color="#FFFFFF"
+          >
+            Get Started
+          </Text>
+        </Box>
+        <Box>
+          <Button
+            w="80%"
+            onClick={onOpen}
+            background="rgba(7, 123, 255, 0.25)"
+            borderRadius="5px"
+          >
+            <Image src={ham} alt="ham" />
+          </Button>
+
+          <Modal isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader>Nav Item</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                <Text>Login</Text>
+                <Text>Blogs</Text>
+                <Text>FAQs</Text>
+                <Text>Resources</Text>
+                <Text>Pricing</Text>
+                <Text>Join Discord</Text>
+              </ModalBody>
+
+              <ModalFooter>
+                <Button colorScheme="blue" mr={3} onClick={onClose}>
+                  Close
+                </Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
+        </Box>
+      </Box>
+
       <Flex
         display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
         justifyContent={"center"}
