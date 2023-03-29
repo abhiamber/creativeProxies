@@ -11,14 +11,14 @@ const HomePage = () => {
       <Home />
       <Box
         background="#0566D4"
-        h="703px"
+        // h="703px"
         // w="80%"
-        pt="115px"
+
         fontFamily="Figtree"
         letterSpacing="-0.02em"
         fontStyle="normal"
         mt="8%"
-        mb="8%"
+        mb="10%"
       >
         <Poster />{" "}
       </Box>

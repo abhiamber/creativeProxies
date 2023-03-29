@@ -6,6 +6,7 @@ import { GiFrogPrince } from "react-icons/gi";
 import Star from "../Image/Star.png";
 import Ellipse from "../Image/Ellipse.png";
 import right from "../Image/right.png";
+import get1 from "../Image/get1.png";
 
 const Main = () => {
   return (
@@ -20,23 +21,30 @@ const Main = () => {
         <Text mb="10px" lineHeight={"43.2px"} fontSize={"36px"}>
           You choose, we <span style={{ color: "#077BFF" }}>Deliver!</span>
         </Text>
-        <Text w="45%" m="auto" lineHeight={"21.6px"} fontSize={"18px"}>
+        <Text
+          w={["99%", "88%", "45%"]}
+          m="auto"
+          lineHeight={"21.6px"}
+          fontSize={["14px", "16px", "18px"]}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
           augue sit amet mollis molestie.
         </Text>
       </Box>
 
       <Box
-        display={"flex"}
+        display="flex"
+        flexWrap="wrap"
+        m="auto"
         justifyContent="center"
         alignItems={"center"}
+        // p="10px"
         gap="20px"
       >
         <Box
           borderRadius={"5px"}
           border={"1px solid #1E1E1E1A"}
-          // h={"447px"}
-          w="33%"
+          w={["86%", "66%", "33%"]}
           bg="#1E1E1E03"
         >
           <Box display={"flex"} gap="80px">
@@ -175,7 +183,7 @@ const Main = () => {
           borderRadius={"5px"}
           border={"1px solid #16D113"}
           // h="495px"
-          w="33%"
+          w={["86%", "66%", "33%"]}
           bg="#16D1131A"
           textAlign={"justify"}
         >
@@ -330,16 +338,18 @@ const Main = () => {
         </Box>
       </Box>
 
+      {/*  sellers data */}
+
       <Box
         borderRadius={"5px"}
         border={"1px solid #1E1E1E1A"}
         bg="#1E1E1E1A"
         display="flex"
-        justifyContent={"center"}
+        justifyContent={["center", "center", "start"]}
         alignItems="center"
-        w="708px"
-        h="142px"
-        gap={"34px"}
+        w={["100%", "100%", "68%"]}
+        gap={["10px", "10px", "30px"]}
+        p="20px"
         margin="auto"
         mt={"21px"}
       >
@@ -349,22 +359,28 @@ const Main = () => {
             justifyContent="center"
             alignItems={"center"}
             borderRadius="10px"
+            textAlign={"justify"}
             bg="#FFDE2E"
-            w="35px"
+            w={["65x", "35px", "35px"]}
             padding={"5px"}
+            // m="auto"
+            mb="5px"
           >
+            {" "}
             <GiFrogPrince color="#FFFFFF" fontSize="23px" />
           </Box>
-          <Heading fontSize={"20px"} fontWeight="600">
-            Become a Reseller
-          </Heading>
-          <Text fontSize={"16px"} fontWeight="400">
-            200+ Happy Resellers
-          </Text>
+          <Box textAlign={"left"}>
+            <Heading fontSize={["15px", "15px", "20px"]} fontWeight="600">
+              Become a Reseller
+            </Heading>
+            <Text fontSize={"16px"} fontWeight="400">
+              200+ Happy Resellers
+            </Text>
+          </Box>
         </Box>
         <Box>
           <Text mb="10px">Plan Includes :</Text>
-          <Box display={"flex"} gap="8px">
+          <Box display={"flex"} gap="10px" pt="5px">
             <Img
               textAlign={"center"}
               w="12.5px"
@@ -372,9 +388,9 @@ const Main = () => {
               src={right}
               alt="right"
             />
-            <Text mt="-4px">100 Threads</Text>
+            <Text mt="-8px">100 Threads</Text>
           </Box>
-          <Box display={"flex"} gap="8px">
+          <Box display={"flex"} gap="10px" pt="5px">
             <Img
               textAlign={"center"}
               w="12.5px"
@@ -382,9 +398,9 @@ const Main = () => {
               src={right}
               alt="right"
             />
-            <Text mt="-4px">Dedicated IP Pool</Text>
+            <Text mt="-8px">Dedicated IP Pool</Text>
           </Box>
-          <Box display={"flex"} gap="8px">
+          <Box display={"flex"} gap="10px" pt="5px">
             <Img
               textAlign={"center"}
               w="12.5px"
@@ -392,11 +408,11 @@ const Main = () => {
               src={right}
               alt="right"
             />
-            <Text mt="-4px">Residential Proxy</Text>
+            <Text mt="-8px">Residential Proxy</Text>
           </Box>
         </Box>
         <Box>
-          <Box display={"flex"} gap="8px">
+          <Box display={"flex"} gap="10px" pt="5px">
             <Img
               textAlign={"center"}
               w="12.5px"
@@ -404,9 +420,9 @@ const Main = () => {
               src={right}
               alt="right"
             />
-            <Text mt="-4px">Dedicated IP Pool</Text>
+            <Text mt="-8px">Dedicated IP Pool</Text>
           </Box>
-          <Box display={"flex"} gap="8px">
+          <Box display={"flex"} gap="10px" pt="5px">
             <Img
               textAlign={"center"}
               w="12.5px"
@@ -414,11 +430,12 @@ const Main = () => {
               src={right}
               alt="right"
             />
-            <Text mt="-4px">Residential Proxy</Text>
+            <Text mt="-8px">Residential Proxy</Text>
           </Box>
         </Box>
       </Box>
 
+      {/* customer lover   */}
       <Box
         mt="8.5%"
         display={"flex"}
@@ -436,12 +453,20 @@ const Main = () => {
         </Text>
       </Box>
 
-      <Box display={"flex"} gap={"17px"} textAlign="left">
+      {/* review section   */}
+      <Box
+        display={"flex"}
+        flexWrap="wrap"
+        justifyContent={"center"}
+        gap={"17px"}
+        textAlign="left"
+      >
         <Box
           border={"1px solid #16D11380"}
           borderRadius="5px"
           bg="#1E1E1E03"
-          w="48%"
+          w={["88%", "60%", "32%"]}
+          m="auto"
           // h="248px"
         >
           <Box p="29px 0 32.1px 25px">
@@ -473,7 +498,7 @@ const Main = () => {
           border={"1px solid #16D11380"}
           borderRadius="5px"
           bg="#1E1E1E03"
-          w="48%"
+          w={["88%", "60%", "32%"]}
           // h="248px"
         >
           <Box p="29px 0 32.1px 25px">
@@ -507,7 +532,7 @@ const Main = () => {
           border={"1px solid #16D11380"}
           borderRadius="5px"
           bg="#1E1E1E03"
-          w="48%"
+          w={["88%", "60%", "32%"]}
           // h="248px"
         >
           <Box p="29px 0 32.1px 25px">
@@ -537,48 +562,130 @@ const Main = () => {
           </Box>
         </Box>
       </Box>
-
+      {/*    empty box part start    */}
       <Box
         bg="#F6FAFF"
         borderRadius={"5px"}
         border="1px solid #1E1E1E1A"
-        m="auto"
-        mb="120px"
+        mb="10%"
         mt={"11%"}
       >
         <Box
-          p="65px 40px 35px 40px"
-          display={"flex"}
-          justifyContent="center"
-          flexDirection={"column"}
+          // p="65px 40px 35px 40px"
+
           alignItems="center"
         >
-          <Heading mb="10px" lineHeight={"43.2px"} fontSize={"36px"}>
+          <Text mb="10px" size="md" lineHeight={"43.2px"} fontSize={"36px"}>
             Read our <span style={{ color: "#077BFF" }}>Exclusive</span> Blog
-          </Heading>
-          <Text w="46%" lineHeight={"21.6px"} fontSize={"18px"}>
+          </Text>
+          <Text
+            w={["100%", "96%", "46%"]}
+            m="auto"
+            lineHeight={"21.6px"}
+            fontSize={"18px"}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
             augue sit amet mollis molestie.
           </Text>
           <Text mt="10px" color={"#077BFF"}>
-            Read All Blogs <Icon as={AiOutlineArrowRight} />
+            Read All Blogs{" "}
+            <Icon pt="15px" fontSize={"25px"} as={AiOutlineArrowRight} />
           </Text>
         </Box>
-
+        {/*************   empty box section */}
         <Box
           // p="0 40px"
           p="30px"
           display={"grid"}
-          gridTemplateColumns="repeat(3,1fr)"
+          gridTemplateColumns={[
+            "repeat(2,1fr)",
+            "repeat(2,1fr)",
+            "repeat(3,1fr)",
+          ]}
           gap="15px"
           m="auto"
-          justifyContent={"center"}
-          alignItems="center"
-          textAlign={"justify"}
+          // justifyContent={"center"}
+          // alignItems="center"
+          textAlign={"left"}
         >
+          <Box w="100%">
+            <Box
+              w={["70%", "70%", "90%"]}
+              m="auto"
+              h="221px"
+              bg="#077BFF1A"
+              border={"1px solid #077BFF80"}
+              borderRadius="5px"
+            ></Box>
+            <Box>
+              <Box pl={["35px", "35px", "18px"]}>
+                <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+                  Blog Title appear here
+                </Heading>
+                <Text color={"#111822"} mt="1px">
+                  Category name here
+                </Text>
+              </Box>
+            </Box>
+          </Box>
           <Box>
             <Box
-              w="320px"
+              w={["70%", "70%", "90%"]}
+              m="auto"
+              h="221px"
+              bg="#077BFF1A"
+              border={"1px solid #077BFF80"}
+              borderRadius="5px"
+            ></Box>
+            <Box pl={["35px", "35px", "18px"]}>
+              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+                Blog Title appear here
+              </Heading>
+              <Text color={"#111822"} mt="1px">
+                Category name here
+              </Text>
+            </Box>
+          </Box>
+          <Box>
+            <Box
+              w={["70%", "70%", "90%"]}
+              m="auto"
+              h="221px"
+              bg="#077BFF1A"
+              border={"1px solid #077BFF80"}
+              borderRadius="5px"
+            ></Box>
+
+            <Box pl={["35px", "35px", "18px"]}>
+              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+                Blog Title appear here
+              </Heading>
+              <Text color={"#111822"} mt="1px">
+                Category name here
+              </Text>
+            </Box>
+          </Box>
+          <Box>
+            <Box
+              w={["70%", "70%", "90%"]}
+              m="auto"
+              h="221px"
+              bg="#077BFF1A"
+              border={"1px solid #077BFF80"}
+              borderRadius="5px"
+            ></Box>
+            <Box pl={["35px", "35px", "18px"]}>
+              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+                Blog Title appear here
+              </Heading>
+              <Text color={"#111822"} mt="1px">
+                Category name here
+              </Text>
+            </Box>
+          </Box>
+          <Box display={{ lg: "block", md: "none", sm: "none", base: "none" }}>
+            <Box
+              w={["60%", "60%", "90%"]}
               m="auto"
               h="221px"
               bg="#077BFF1A"
@@ -592,73 +699,9 @@ const Main = () => {
               Category name here
             </Text>
           </Box>
-          <Box>
+          <Box display={{ lg: "block", md: "none", sm: "none", base: "none" }}>
             <Box
-              w="320px"
-              m="auto"
-              h="221px"
-              bg="#077BFF1A"
-              border={"1px solid #077BFF80"}
-              borderRadius="5px"
-            ></Box>
-            <Heading mt="11px" fontSize={"20px"}>
-              Blog Title appear here
-            </Heading>
-            <Text color={"#111822"} mt="1px">
-              Category name here
-            </Text>
-          </Box>
-          <Box>
-            <Box
-              w="320px"
-              m="auto"
-              h="221px"
-              bg="#077BFF1A"
-              border={"1px solid #077BFF80"}
-              borderRadius="5px"
-            ></Box>
-            <Heading mt="11px" fontSize={"20px"}>
-              Blog Title appear here
-            </Heading>
-            <Text color={"#111822"} mt="1px">
-              Category name here
-            </Text>
-          </Box>
-          <Box>
-            <Box
-              w="320px"
-              m="auto"
-              h="221px"
-              bg="#077BFF1A"
-              border={"1px solid #077BFF80"}
-              borderRadius="5px"
-            ></Box>
-            <Heading mt="11px" fontSize={"20px"}>
-              Blog Title appear here
-            </Heading>
-            <Text color={"#111822"} mt="1px">
-              Category name here
-            </Text>
-          </Box>
-          <Box>
-            <Box
-              w="320px"
-              m="auto"
-              h="221px"
-              bg="#077BFF1A"
-              border={"1px solid #077BFF80"}
-              borderRadius="5px"
-            ></Box>
-            <Heading mt="11px" fontSize={"20px"}>
-              Blog Title appear here
-            </Heading>
-            <Text color={"#111822"} mt="1px">
-              Category name here
-            </Text>
-          </Box>
-          <Box>
-            <Box
-              w="320px"
+              w={["60%", "60%", "90%"]}
               h="221px"
               m="auto"
               bg="#077BFF1A"

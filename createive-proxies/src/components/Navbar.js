@@ -12,16 +12,18 @@ const Navbar = () => {
     navigate("/");
   };
   return (
-    <Box>
+    <Box
+      fontFamily="Figtree"
+      fontStyle="normal"
+      letterSpacing="-0.02em"
+      w="80%"
+      m="auto"
+    >
       <Flex
-        w="80%"
-        m="auto"
+        display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
         justifyContent={"center"}
         alignItems="center"
         p="5px"
-        fontFamily="Figtree"
-        fontStyle="normal"
-        letterSpacing="-0.02em"
       >
         <Box
           h="33px"
@@ -191,7 +193,7 @@ const Navbar = () => {
           </Text>
         </Box>
       </Flex>
-      <Box width="80%" m="auto" height="0px" border="1px solid #D9D8D6"></Box>
+      <Box height="0px" border="1px solid #D9D8D6"></Box>
     </Box>
   );
 };

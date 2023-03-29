@@ -17,47 +17,56 @@ const Footer = () => {
     >
       <Box h="0" mt="7%" mb="2%" border="1px solid #D9D8D6"></Box>
 
-      <Flex
-        display={"flex"}
+      <Box
+        display={"grid"}
+        gridTemplateColumns={[
+          "repeat(1,1fr)",
+          "repeat(1,1fr)",
+          "repeat(2,1fr)",
+        ]}
         // gap="14%"
-        m="auto"
+        // m="auto"
         mb="2%"
         mt="1%"
         justifyContent="space-between"
         alignItems={"center"}
       >
-        <Box>
-          <Box display={"flex"} gap="7.42px">
-            <Image w={"13%"} src={creativeproxies} alt="logo" />
-            <Text fontSize={"26px"} fontWeight="600">
-              CreativeProxies
+        <Box
+          display={{ lg: "block", md: "flex", sm: "flex", base: "flex" }}
+          justifyContent="space-between"
+        >
+          <Box>
+            <Box display={"flex"} gap="7.42px">
+              <Image
+                w={["10%", "10%", "7%"]}
+                src={creativeproxies}
+                alt="logo"
+              />
+              <Text fontSize={["20px", "20px", "26px"]} fontWeight="600">
+                CreativeProxies
+              </Text>
+            </Box>
+            <Text
+              fontSize={"14px"}
+              fontWeight="400"
+              color={"#111822"}
+              lineHeight={"20px"}
+              w={["75%", "75%", "68%"]}
+              m="5px"
+              textAlign={"justify"}
+              mb="10px"
+            >
+              Copyright © 2023 Creative Proxies. All rights reserved.
             </Text>
           </Box>
-          <Text
-            fontSize={"14px"}
-            // mb="15px"
-            fontWeight="400"
-            color={"#111822"}
-            lineHeight={"20px"}
-            w="68%"
-            m="5px"
-            textAlign={"justify"}
-            // h="34px"
-            // mt="8px"mb=
-            mb="10px"
-          >
-            Copyright © 2023 Creative Proxies. All rights reserved.
-          </Text>
           <Box
             display="flex"
             flexDirection="row"
             alignItems="center"
             justifyContent={"center"}
+            mt={["10px"]}
             padding="20px"
-            // gap="5px"
-            width="72%"
-            // m="auto"
-
+            width={["42%", "42%", "62%"]}
             background="rgba(88, 101, 242, 0.1)"
             border="1px solid #5865F2"
             borderRadius="10px"
@@ -78,7 +87,12 @@ const Footer = () => {
           </Box>
         </Box>
 
-        <Box display={"flex"} gap="100px">
+        <Box
+          display={"flex"}
+          justifyContent="center"
+          gap="100px"
+          mt={["15px", null, null]}
+        >
           <Box>
             <Text
               color={"#111822"}
@@ -150,7 +164,7 @@ const Footer = () => {
             </Box>
           </Box>
         </Box>
-      </Flex>
+      </Box>
     </Box>
   );
 };

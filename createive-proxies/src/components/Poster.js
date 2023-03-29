@@ -1,27 +1,27 @@
-import { Box, Heading, Image, Img, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import people from "../Image/people.png";
 
 const Poster = () => {
   return (
-    <Box w="80%" m="auto">
+    <Box w="80%" m="auto" p="20px" pt="80px" pb="80px">
       <Text
         textAlign={"center"}
         fontWeight="600"
-        fontSize="36px"
+        fontSize={["26px", "26px", "36px"]}
         lineHeight="43px"
         color="#FFFFFF"
-        w="55%"
+        w={["95%", "95%", "55%"]}
         m="auto"
       >
         Why we are the Best Proxy Providers
       </Text>
 
       <Text
-        w="35%"
+        w={["75%", "75%", "35%"]}
         lineHeight={"22px"}
         fontWeight="500"
-        h="44px"
+        // h="44px"
         color="#FFFFFF"
         fontSize={"18px"}
         opacity="0.5"
@@ -31,7 +31,16 @@ const Poster = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue
         sit amet mollis molestie.
       </Text>
-      <Box display={"grid"} gridTemplateColumns="repeat(4,1fr)" gap="5" mt="2%">
+      <Box
+        display={"grid"}
+        gridTemplateColumns={[
+          "repeat(2,1fr)",
+          "repeat(2,1fr)",
+          "repeat(4,1fr)",
+        ]}
+        gap="5"
+        mt="2%"
+      >
         <Box
           background="rgba(255, 255, 255, 0.03)"
           border="1px solid rgba(255, 255, 255, 0.25)"
