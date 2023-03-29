@@ -69,7 +69,8 @@ Images and all necessary information required or user intrested to look at.
   ### Login Page
  This section shows the best selling products available on the website.
  
-![Screenshot (247)](https://user-images.githubusercontent.com/102507444/213933517-68754744-d018-47da-a01f-2f88105fd3ad.png)
+![image](https://user-images.githubusercontent.com/102507444/228644957-f3ecca12-0f24-4ad8-8da9-a01fb24daa32.png)
+
 
 
  ### Product Detail Page
