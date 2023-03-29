@@ -436,13 +436,13 @@ const Main = () => {
         </Text>
       </Box>
 
-      <Box display={"flex"} gap={"17px"}>
+      <Box display={"flex"} gap={"17px"} textAlign="left">
         <Box
           border={"1px solid #16D11380"}
           borderRadius="5px"
           bg="#1E1E1E03"
-          w="386px"
-          h="248px"
+          w="48%"
+          // h="248px"
         >
           <Box p="29px 0 32.1px 25px">
             <Box display={"flex"}>
@@ -452,7 +452,10 @@ const Main = () => {
               <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
               <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
             </Box>
-            <Text mt="19.1px" w={"335px"} h="88px">
+            <Text
+              mt="19.1px"
+              // w={"335px"} h="88px"
+            >
               “Integer facilisis metus magna, non eleifend est ultricies sit
               amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante
               auctor velit, quis convallis tor et tellus.”
@@ -470,8 +473,8 @@ const Main = () => {
           border={"1px solid #16D11380"}
           borderRadius="5px"
           bg="#1E1E1E03"
-          w="386px"
-          h="248px"
+          w="48%"
+          // h="248px"
         >
           <Box p="29px 0 32.1px 25px">
             <Box display={"flex"}>
@@ -481,7 +484,10 @@ const Main = () => {
               <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
               <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
             </Box>
-            <Text mt="19.1px" w={"335px"} h="88px">
+            <Text
+              mt="19.1px"
+              // w={"335px"} h="88px"
+            >
               “Integer facilisis metus magna, non eleifend est ultricies sit
               amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante
               auctor velit, quis convallis tor et tellus.”
@@ -501,8 +507,8 @@ const Main = () => {
           border={"1px solid #16D11380"}
           borderRadius="5px"
           bg="#1E1E1E03"
-          w="386px"
-          h="248px"
+          w="48%"
+          // h="248px"
         >
           <Box p="29px 0 32.1px 25px">
             <Box display={"flex"}>
@@ -512,7 +518,10 @@ const Main = () => {
               <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
               <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
             </Box>
-            <Text mt="19.1px" w={"335px"} h="88px">
+            <Text
+              mt="19.1px"
+              // w={"335px"} h="88px"
+            >
               “Integer facilisis metus magna, non eleifend est ultricies sit
               amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante
               auctor velit, quis convallis tor et tellus.”
