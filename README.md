@@ -49,7 +49,8 @@ Clone the Repository from Github. Then do the following steps:
  ### Home Page
  This is the landing page when user visits for the website for first time.
 
-![App Screenshot](https://user-images.githubusercontent.com/102507444/213928090-cbaf214f-8d71-4e0a-b569-4fc2a0e71889.png)
+![image](https://user-images.githubusercontent.com/102507444/228644095-b5359fbd-5d6f-453d-b395-c84741a6bada.png)
+
 
 
  ### Product Page
