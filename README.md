@@ -49,8 +49,7 @@ Clone the Repository from Github. Then do the following steps:
 
 
 ## Footer
-https://user-images.githubusercontent.com/102507444/228645106-664067c3-6407-4ce1-8e66-8a16bcc84239.png
-
+![image](https://user-images.githubusercontent.com/102507444/228645106-664067c3-6407-4ce1-8e66-8a16bcc84239.png)
 
 
 
