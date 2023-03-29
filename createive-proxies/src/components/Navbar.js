@@ -1,210 +1,197 @@
 import React from "react";
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import creativeproxies from "../Image/creativeproxies.png";
 import Icon from "../Image/Icon.png";
 import discord1 from "../Image/discord1.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  let navigate = useNavigate();
+
+  let handleClick = () => {
+    navigate("/");
+  };
   return (
     <Box>
-      <Box w="217px" h="33px" position={"absloute"} left="371px" top="13px">
-        <Image
-          position="absolute"
-          width="33px"
-          height="33px"
-          left="371px"
-          top="13px"
-          src={creativeproxies}
-          alt="logo"
-        />
-        <Text
-          position="absolute"
-          width="180px"
-          height="31px"
-          left="408px"
-          top="14px"
-          fontFamily="Figtree"
-          fontStyle="normal"
-          fontWeight="600"
-          fontSize="26px"
-          lineHeight="31px"
-          letterSpacing="-0.02em"
-          color="#111822"
-        >
-          CreativeProxies
-        </Text>
-      </Box>
-      <Box
-        display="flex"
-        flexDirection="row"
-        alignItems="flex-start"
-        padding="0px"
-        gap="30px"
-        position="absolute"
-        width="445px"
-        height="19px"
-        left="619px"
-        top="20px"
-        opacity=" 0.9"
+      <Flex
+        w="80%"
+        m="auto"
+        justifyContent={"center"}
+        alignItems="center"
+        p="5px"
+        fontFamily="Figtree"
+        fontStyle="normal"
+        letterSpacing="-0.02em"
       >
-        <Box>
+        <Box
+          h="33px"
+          display={"flex"}
+          justifyContent="center"
+          onClick={handleClick}
+          cursor="pointer"
+        >
+          <Image width="20%" height="33px" src={creativeproxies} alt="logo" />
           <Text
-            width="48px"
+            height="31px"
+            fontWeight="600"
+            fontSize="26px"
+            lineHeight="31px"
+            color="#111822"
+          >
+            CreativeProxies
+          </Text>
+        </Box>
+        <Box
+          display="flex"
+          flexDirection="row"
+          alignItems="flex-start"
+          padding="0px"
+          gap="30px"
+          pl="20px"
+          pr="20px"
+          width="50%"
+          height="19px"
+          opacity=" 0.9"
+        >
+          <Box>
+            <Text
+              height="19px"
+              fontWeight="400"
+              fontSize="16px"
+              lineHeight="19px"
+              color="#111822"
+            >
+              Pricing
+            </Text>
+          </Box>
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            alignItems="center"
+            padding="0px"
+            gap="8px"
             height="19px"
-            fontFamily="Figtree"
-            fontStyle="normal"
+          >
+            <Text
+              height="19px"
+              fontWeight="400"
+              font-size="16px"
+              lineHeight="19px"
+              color="#111822"
+              flex=" none"
+            >
+              Explore Tools
+            </Text>
+            <Image
+              width="9.5px"
+              height="5.5px"
+              color="#111822"
+              src={Icon}
+              alt="logo"
+            />
+          </Box>
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            alignItems="center"
+            padding="0px"
+            gap="8px"
+          >
+            <Text
+              height="19px"
+              fontWeight="400"
+              font-size="16px"
+              lineHeight="19px"
+              color="#111822"
+            >
+              Resources
+            </Text>
+            <Image
+              width="9.5px"
+              height="5.5px"
+              color="#111822"
+              src={Icon}
+              alt="logo"
+            />
+          </Box>
+          <Box>
+            <Text
+              height="19px"
+              fontWeight="400"
+              font-size="16px"
+              lineHeight="19px"
+              color="#111822"
+            >
+              FAQs
+            </Text>
+          </Box>
+          <Box>
+            <Text
+              height="19px"
+              fontWeight="400"
+              font-size="16px"
+              lineHeight="19px"
+              color="#111822"
+            >
+              Blogs
+            </Text>
+          </Box>
+        </Box>
+
+        <Box
+          display="flex"
+          flexDirection="row"
+          alignItems="center"
+          justifyContent={"center"}
+          padding="0px"
+          gap="5px"
+          width="20%"
+          // m="auto"
+          height="19px"
+        >
+          <Image width="16px" height="16px" src={discord1} alt="discrd" />
+          <Text
+            height="19px"
+            fontWeight="500"
+            fontSize="16px"
+            lineHeight="19px"
+            color="#5865F2"
+          >
+            Join Discord
+          </Text>
+          <Text width="0px" height="31.5px" border="1px solid #D9D8D6"></Text>
+          <Text
+            height="19px"
             fontWeight="400"
             fontSize="16px"
             lineHeight="19px"
-            letterSpacing="-0.02em"
             color="#111822"
-            flex="none"
-            order="0"
-            flexGrow="0"
           >
-            Pricing
+            Log in
           </Text>
         </Box>
         <Box
-          display="flex"
-          flexDirection="row"
-          justifyContent="center"
-          alignItems="center"
-          padding="0px"
-          gap="8px"
-          width="108.5px"
-          height="19px"
-          flex=" none"
-          order="1"
-          flexGrow="0"
+          padding="10px"
+          width="10%"
+          m="auto"
+          height="39px"
+          background="#077BFF"
+          borderRadius="5px"
         >
           <Text
-            width="91px"
             height="19px"
-            fontFamily="Figtree"
-            fontStyle="normal"
             fontWeight="400"
-            font-size="16px"
+            fontSize="16px"
             lineHeight="19px"
-            letterSpacing="-0.02em"
-            color="#111822"
-            flex=" none"
-            order="0"
-            flexGrow="0"
+            color="#FFFFFF"
           >
-            Explore Tools
-          </Text>
-          <Image
-            width="9.5px"
-            height="5.5px"
-            color="#111822"
-            flex="none"
-            order="1"
-            flexGrow="0"
-            src={Icon}
-            alt="logo"
-          />
-        </Box>
-        <Box
-          display="flex"
-          flexDirection="row"
-          justifyContent="center"
-          alignItems="center"
-          padding="0px"
-          gap="8px"
-          width="90.5px"
-          height="19px"
-          flex=" none"
-          order="2"
-          flexGrow="0"
-        >
-          <Text
-            width="73px"
-            height="19px"
-            fontFamily="Figtree"
-            fontStyle="normal"
-            fontWeight="400"
-            font-size="16px"
-            lineHeight="19px"
-            letterSpacing="-0.02em"
-            color="#111822"
-            flex=" none"
-            order="0"
-            flexGrow="0"
-          >
-            Resources
-          </Text>
-          <Image
-            width="9.5px"
-            height="5.5px"
-            color="#111822"
-            flex="none"
-            order="1"
-            flexGrow="0"
-            src={Icon}
-            alt="logo"
-          />
-        </Box>
-        <Box>
-          <Text
-            width="39px"
-            height="19px"
-            fontFamily="Figtree"
-            fontStyle="normal"
-            fontWeight="400"
-            font-size="16px"
-            lineHeight="19px"
-            letterSpacing="-0.02em"
-            color="#111822"
-            flex=" none"
-            order="3"
-            flexGrow="0"
-          >
-            FAQs
+            Get Started
           </Text>
         </Box>
-        <Box>
-          <Text
-            width="39px"
-            height="19px"
-            fontFamily="Figtree"
-            fontStyle="normal"
-            fontWeight="400"
-            font-size="16px"
-            lineHeight="19px"
-            letterSpacing="-0.02em"
-            color="#111822"
-            flex=" none"
-            order="4"
-            flexGrow="0"
-          >
-            Blogs
-          </Text>
-        </Box>
-      </Box>
-
-      <Box
-        display="flex"
-        flexDirection="row"
-        alignItems="center"
-        padding="0px"
-        gap="5px"
-        width="108px"
-        height="19px"
-        flex="none"
-        order="0"
-        flexGrow="0"
-      >
-        <Image
-          width="16px"
-          height="16px"
-          flex="none"
-          order="0"
-          flexGrow="0"
-          src={discord1}
-          alt="discrd"
-        />
-      </Box>
+      </Flex>
+      <Box width="80%" m="auto" height="0px" border="1px solid #D9D8D6"></Box>
     </Box>
   );
 };
