@@ -42,10 +42,14 @@ Clone the Repository from Github. Then do the following steps:
 
 
 
-  ### Login Page
+  ### Location
 
  
 ![image](https://user-images.githubusercontent.com/102507444/228644957-f3ecca12-0f24-4ad8-8da9-a01fb24daa32.png)
+
+
+## Footer
+https://user-images.githubusercontent.com/102507444/228645106-664067c3-6407-4ce1-8e66-8a16bcc84239.png
 
 
 
