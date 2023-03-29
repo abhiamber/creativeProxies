@@ -56,7 +56,8 @@ Clone the Repository from Github. Then do the following steps:
  ### Product Page
 Images and all necessary information required or user intrested to look at.
 
-![Screenshot (245)](https://user-images.githubusercontent.com/102507444/213933374-997845c1-368d-4d41-9568-ecd9e78cd4ce.png)
+![image](https://user-images.githubusercontent.com/102507444/228644445-faea9a56-9ee5-45c6-8d2b-2c89a4db168e.png)
+
 
  ### Sign In Page
  In Sign in page where user need to give their credentials to access the protected parts of the website.
