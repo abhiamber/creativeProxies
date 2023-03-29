@@ -3,21 +3,24 @@ import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Icon } from "@chakra-ui/icons";
 import { GiFrogPrince } from "react-icons/gi";
+import Star from "../Image/Star.png";
+import Ellipse from "../Image/Ellipse.png";
+import right from "../Image/right.png";
 
 const Main = () => {
   return (
-    <Box>
+    <Box w="80%" m="auto">
       <Box
-        mb="79px"
+        mb="2%"
         display={"flex"}
         justifyContent="center"
         flexDirection={"column"}
         alignItems="center"
       >
-        <Heading mb="10px" lineHeight={"43.2px"} fontSize={"36px"}>
+        <Text mb="10px" lineHeight={"43.2px"} fontSize={"36px"}>
           You choose, we <span style={{ color: "#077BFF" }}>Deliver!</span>
-        </Heading>
-        <Text w="465px" lineHeight={"21.6px"} fontSize={"18px"}>
+        </Text>
+        <Text w="45%" m="auto" lineHeight={"21.6px"} fontSize={"18px"}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
           augue sit amet mollis molestie.
         </Text>
@@ -32,15 +35,13 @@ const Main = () => {
         <Box
           borderRadius={"5px"}
           border={"1px solid #1E1E1E1A"}
-          h={"447px"}
-          w="344px"
+          // h={"447px"}
+          w="33%"
           bg="#1E1E1E03"
         >
           <Box display={"flex"} gap="80px">
             <Box p="26px 0 14px 28px">
               <Text
-                w="40px"
-                h="35px"
                 display={"flex"}
                 justifyContent="center"
                 alignItems={"center"}
@@ -50,17 +51,18 @@ const Main = () => {
                 border={"1px solid "}
                 padding="10px"
                 fontSize={"8px"}
+                textAlign="justify"
               >
                 V<span style={{ fontSize: "18px" }}>4</span>
               </Text>
-              <Heading mt="8px" fontWeight={"600"} fontSize={"20px"}>
+              <Text mt="8px" fontWeight={"600"} fontSize={"20px"}>
                 IPv4 Proxies
-              </Heading>
+              </Text>
               <Text fontWeight={"400"} mt="8px">
                 Static/Rotating
               </Text>
             </Box>
-            <Box p="37px 40px 24px 0" lineHeight={"18px"}>
+            <Box p="37px 40px 24px 0" lineHeight={"18px"} textAlign="justify">
               <Text fontWeight={"600"} fontSize="12px">
                 FROM
               </Text>
@@ -79,7 +81,7 @@ const Main = () => {
               </Text>
             </Box>
           </Box>
-          <hr style={{ width: "295px", margin: "auto", color: "#25CD08" }} />
+          <hr style={{ width: "25%", margin: "auto", color: "#25CD08" }} />
           <Box
             pl="28px"
             fontWeight={"400"}
@@ -87,13 +89,15 @@ const Main = () => {
             lineHeight={"28.2px"}
             mb="21px"
           >
-            <Text mb="10px">Plan Includes :</Text>
+            <Text mb="10px" textAlign={"justify"}>
+              Plan Includes :
+            </Text>
             <Box display={"flex"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">100 Threads</Text>
@@ -103,7 +107,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Dedicated IP Pool</Text>
@@ -113,7 +117,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Residential Proxy</Text>
@@ -123,7 +127,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Unlimited Bandwidth</Text>
@@ -133,7 +137,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Worldwide Locations</Text>
@@ -143,7 +147,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">40 GBps</Text>
@@ -158,7 +162,7 @@ const Main = () => {
               color={"#FFFFFF"}
               bg="#077BFF"
               borderRadius={"5px"}
-              w={"295px"}
+              w={"83%"}
               h="47px"
             >
               View Pricing <Icon ml={"4px"} as={AiOutlineArrowRight} />
@@ -167,18 +171,19 @@ const Main = () => {
         </Box>
 
         <Box
-          mt="40px"
+          mt="2.8%"
           borderRadius={"5px"}
           border={"1px solid #16D113"}
-          h="495px"
-          w="344px"
+          // h="495px"
+          w="33%"
           bg="#16D1131A"
+          textAlign={"justify"}
         >
           <Box display={"flex"} gap="80px">
             <Box p="26px 0 14px 28px">
               <Text
-                w="40px"
-                h="35px"
+                // w="40px"
+                // h="35px"
                 display={"flex"}
                 justifyContent="center"
                 alignItems={"center"}
@@ -231,7 +236,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">100 Threads</Text>
@@ -241,7 +246,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Dedicated IP Pool</Text>
@@ -251,7 +256,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Residential Proxy</Text>
@@ -261,7 +266,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Unlimited Bandwidth</Text>
@@ -271,7 +276,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Worldwide Locations</Text>
@@ -281,7 +286,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right1.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Dedicated Subnets</Text>
@@ -291,7 +296,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right1.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">1 Octilion IPS</Text>
@@ -301,7 +306,7 @@ const Main = () => {
                 textAlign={"center"}
                 w="12.5px"
                 h="8.5px"
-                src="./Images/right1.png"
+                src={right}
                 alt="right"
               />
               <Text mt="-4px">Septiltion per Location</Text>
@@ -316,7 +321,7 @@ const Main = () => {
               color={"#FFFFFF"}
               bg="#2CE517"
               borderRadius={"5px"}
-              w={"295px"}
+              w={"88%"}
               h="47px"
             >
               View Pricing <Icon ml={"4px"} as={AiOutlineArrowRight} />
@@ -364,7 +369,7 @@ const Main = () => {
               textAlign={"center"}
               w="12.5px"
               h="8.5px"
-              src="./Images/right.png"
+              src={right}
               alt="right"
             />
             <Text mt="-4px">100 Threads</Text>
@@ -374,7 +379,7 @@ const Main = () => {
               textAlign={"center"}
               w="12.5px"
               h="8.5px"
-              src="./Images/right.png"
+              src={right}
               alt="right"
             />
             <Text mt="-4px">Dedicated IP Pool</Text>
@@ -384,7 +389,7 @@ const Main = () => {
               textAlign={"center"}
               w="12.5px"
               h="8.5px"
-              src="./Images/right.png"
+              src={right}
               alt="right"
             />
             <Text mt="-4px">Residential Proxy</Text>
@@ -396,7 +401,7 @@ const Main = () => {
               textAlign={"center"}
               w="12.5px"
               h="8.5px"
-              src="./Images/right.png"
+              src={right}
               alt="right"
             />
             <Text mt="-4px">Dedicated IP Pool</Text>
@@ -406,7 +411,7 @@ const Main = () => {
               textAlign={"center"}
               w="12.5px"
               h="8.5px"
-              src="./Images/right.png"
+              src={right}
               alt="right"
             />
             <Text mt="-4px">Residential Proxy</Text>
@@ -415,7 +420,7 @@ const Main = () => {
       </Box>
 
       <Box
-        mt="180px"
+        mt="8.5%"
         display={"flex"}
         justifyContent="center"
         flexDirection={"column"}
@@ -431,7 +436,7 @@ const Main = () => {
         </Text>
       </Box>
 
-      <Box display={"flex"} w="1160px" m="auto" gap={"17px"}>
+      <Box display={"flex"} gap={"17px"}>
         <Box
           border={"1px solid #16D11380"}
           borderRadius="5px"
@@ -441,11 +446,11 @@ const Main = () => {
         >
           <Box p="29px 0 32.1px 25px">
             <Box display={"flex"}>
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
             </Box>
             <Text mt="19.1px" w={"335px"} h="88px">
               “Integer facilisis metus magna, non eleifend est ultricies sit
@@ -453,12 +458,7 @@ const Main = () => {
               auctor velit, quis convallis tor et tellus.”
             </Text>
             <Box mt="12px" display={"flex"} gap="10px">
-              <Img
-                w="48px"
-                h="48px"
-                src="./Images/Ellipse 1.png"
-                alt="profile"
-              />
+              <Img w="48px" h="48px" src={Ellipse} alt="profile" />
               <Box fontWeight={"400"}>
                 <Heading fontSize={"18px"}>ECHO DZNS</Heading>
                 <Text>Web Designer, CreativeProxies</Text>
@@ -475,11 +475,11 @@ const Main = () => {
         >
           <Box p="29px 0 32.1px 25px">
             <Box display={"flex"}>
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
             </Box>
             <Text mt="19.1px" w={"335px"} h="88px">
               “Integer facilisis metus magna, non eleifend est ultricies sit
@@ -487,12 +487,8 @@ const Main = () => {
               auctor velit, quis convallis tor et tellus.”
             </Text>
             <Box mt="12px" display={"flex"} gap="10px">
-              <Img
-                w="48px"
-                h="48px"
-                src="./Images/Ellipse 1.png"
-                alt="profile"
-              />
+              <Img w="48px" h="48px" src={Ellipse} alt="profile" />
+
               <Box fontWeight={"400"}>
                 <Heading fontSize={"18px"}>John Doe</Heading>
                 <Text>Random Text, ABC</Text>
@@ -510,11 +506,11 @@ const Main = () => {
         >
           <Box p="29px 0 32.1px 25px">
             <Box display={"flex"}>
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
-              <Img w={"23.8px"} h="23.8px" src="./Images/Star.png" alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
+              <Img w={"23.8px"} h="23.8px" src={Star} alt="star" />
             </Box>
             <Text mt="19.1px" w={"335px"} h="88px">
               “Integer facilisis metus magna, non eleifend est ultricies sit
@@ -522,12 +518,8 @@ const Main = () => {
               auctor velit, quis convallis tor et tellus.”
             </Text>
             <Box mt="12px" display={"flex"} gap="10px">
-              <Img
-                w="48px"
-                h="48px"
-                src="./Images/Ellipse 1.png"
-                alt="profile"
-              />
+              <Img w="48px" h="48px" src={Ellipse} alt="profile" />
+
               <Box fontWeight={"400"}>
                 <Heading fontSize={"18px"}>ECHO DZNS</Heading>
                 <Text>Web Designer, CreativeProxies</Text>
@@ -538,14 +530,12 @@ const Main = () => {
       </Box>
 
       <Box
-        w="1192px"
-        h="859px"
         bg="#F6FAFF"
         borderRadius={"5px"}
         border="1px solid #1E1E1E1A"
         m="auto"
         mb="120px"
-        mt={"250px"}
+        mt={"11%"}
       >
         <Box
           p="65px 40px 35px 40px"
@@ -557,7 +547,7 @@ const Main = () => {
           <Heading mb="10px" lineHeight={"43.2px"} fontSize={"36px"}>
             Read our <span style={{ color: "#077BFF" }}>Exclusive</span> Blog
           </Heading>
-          <Text w="465px" lineHeight={"21.6px"} fontSize={"18px"}>
+          <Text w="46%" lineHeight={"21.6px"} fontSize={"18px"}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
             augue sit amet mollis molestie.
           </Text>
@@ -567,14 +557,20 @@ const Main = () => {
         </Box>
 
         <Box
-          p="0 40px"
+          // p="0 40px"
+          p="30px"
           display={"grid"}
           gridTemplateColumns="repeat(3,1fr)"
-          gap="25px"
+          gap="15px"
+          m="auto"
+          justifyContent={"center"}
+          alignItems="center"
+          textAlign={"justify"}
         >
           <Box>
             <Box
-              w="354px"
+              w="320px"
+              m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
@@ -589,7 +585,8 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w="354px"
+              w="320px"
+              m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
@@ -604,7 +601,8 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w="354px"
+              w="320px"
+              m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
@@ -619,7 +617,8 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w="354px"
+              w="320px"
+              m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
@@ -634,7 +633,8 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w="354px"
+              w="320px"
+              m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
@@ -649,8 +649,9 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w="354px"
+              w="320px"
               h="221px"
+              m="auto"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
               borderRadius="5px"
