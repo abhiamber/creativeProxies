@@ -5,27 +5,34 @@ import get1 from "../Image/get1.png";
 import Frame6 from "../Image/Frame6.png";
 import Frame7 from "../Image/Frame7.png";
 import square from "../Image/square.png";
+import lock from "../Image/lock.png";
+import dollar from "../Image/dollar.png";
+import security from "../Image/security.png";
 
 const data = [
   {
     title: "Lorem Ipsun",
     description: "Dolor Sit Amet Top",
     image: square,
+    background: "linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)",
   },
   {
     title: "Lorem Ipsun",
     description: "Dolor Sit Amet Top",
-    image: square,
+    image: lock,
+    background: "linear-gradient(135deg, #72E6E5 0%, #75DFF0 100%)",
   },
   {
     title: "Lorem Ipsun",
     description: "Dolor Sit Amet Top",
-    image: square,
+    image: dollar,
+    background: "linear-gradient(135deg, #80FC6A 0%, #41F064 100%)",
   },
   {
     title: "Lorem Ipsun",
     description: "Dolor Sit Amet Top",
-    image: square,
+    image: security,
+    background: "linear-gradient(135deg, #2E73E8 0%, #215FDA 100%)",
   },
 ];
 
@@ -173,7 +180,7 @@ const Home = () => {
                 h={["25px", "25px", "40px"]}
                 src={item?.image}
                 alt={item?.image}
-                background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
+                background={item?.background}
                 borderRadius="8px"
                 ml={["2px", "3px", "0px"]}
               />

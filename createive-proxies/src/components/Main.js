@@ -684,35 +684,39 @@ const Main = () => {
           </Box>
           <Box display={{ lg: "block", md: "none", sm: "none", base: "none" }}>
             <Box
-              w={["60%", "60%", "90%"]}
+              w={"90%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
               borderRadius="5px"
             ></Box>
-            <Heading mt="11px" fontSize={"20px"}>
-              Blog Title appear here
-            </Heading>
-            <Text color={"#111822"} mt="1px">
-              Category name here
-            </Text>
+            <Box pl={["35px", "35px", "18px"]}>
+              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+                Blog Title appear here
+              </Heading>
+              <Text color={"#111822"} mt="1px">
+                Category name here
+              </Text>
+            </Box>
           </Box>
           <Box display={{ lg: "block", md: "none", sm: "none", base: "none" }}>
             <Box
-              w={["60%", "60%", "90%"]}
-              h="221px"
+              w={"90%"}
               m="auto"
+              h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
               borderRadius="5px"
             ></Box>
-            <Heading mt="11px" fontSize={"20px"}>
-              Blog Title appear here
-            </Heading>
-            <Text color={"#111822"} mt="1px">
-              Category name here
-            </Text>
+            <Box pl={["35px", "35px", "18px"]}>
+              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+                Blog Title appear here
+              </Heading>
+              <Text color={"#111822"} mt="1px">
+                Category name here
+              </Text>
+            </Box>
           </Box>
         </Box>
       </Box>
