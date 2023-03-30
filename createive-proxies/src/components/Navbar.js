@@ -28,6 +28,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   let handleClick = (path) => {
+    // console.log(path);
     navigate(`/${path}`);
   };
   return (
@@ -47,7 +48,7 @@ const Navbar = () => {
           h="33px"
           display={"flex"}
           justifyContent="center"
-          onClick={handleClick}
+          onClick={() => handleClick("")}
           cursor="pointer"
         >
           <Image width="17%" height="33px" src={creativeproxies} alt="logo" />
@@ -69,6 +70,7 @@ const Navbar = () => {
           height="39px"
           background="#077BFF"
           borderRadius="5px"
+          onClick={() => handleClick("location")}
         >
           <Text
             height="19px"
