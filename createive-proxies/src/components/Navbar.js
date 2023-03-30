@@ -63,9 +63,9 @@ const Navbar = () => {
         </Box>
         <Box
           padding="10px"
-          width="30%"
+          width={["auto", "30%", "30%"]}
           m="auto"
-          mr="3px"
+          mr="0px"
           height="39px"
           background="#077BFF"
           borderRadius="5px"
@@ -115,7 +115,7 @@ const Navbar = () => {
       </Box>
 
       <Flex
-        display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
+        display={{ lg: "flex", md: "none", sm: "none", base: "none" }}
         justifyContent={"center"}
         alignItems="center"
         p="5px"
@@ -127,7 +127,7 @@ const Navbar = () => {
           onClick={handleClick}
           cursor="pointer"
         >
-          <Image width="20%" height="33px" src={creativeproxies} alt="logo" />
+          <Image width="17%" height="33px" src={creativeproxies} alt="logo" />
           <Text
             height="31px"
             fontWeight="600"

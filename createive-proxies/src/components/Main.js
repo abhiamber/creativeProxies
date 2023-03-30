@@ -179,7 +179,7 @@ const Main = () => {
         </Box>
 
         <Box
-          mt="2.8%"
+          mt={[null, null, "3.8%"]}
           borderRadius={"5px"}
           border={"1px solid #16D113"}
           // h="495px"
