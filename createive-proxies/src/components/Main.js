@@ -576,6 +576,7 @@ const Main = () => {
           // p="65px 40px 35px 40px"
 
           alignItems="center"
+          mt="40px"
         >
           <Text mb="10px" size="md" lineHeight={"43.2px"} fontSize={"36px"}>
             Read our <span style={{ color: "#077BFF" }}>Exclusive</span> Blog

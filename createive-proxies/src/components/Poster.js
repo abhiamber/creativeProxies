@@ -1,6 +1,13 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import people from "../Image/people.png";
+import people2 from "../Image/people2.png";
+import people3 from "../Image/people3.png";
+import people4 from "../Image/people4.png";
+import people5 from "../Image/people5.png";
+import people6 from "../Image/people6.png";
+import people7 from "../Image/people7.png";
+import people8 from "../Image/people8.png";
 
 const data = [
   {
@@ -13,43 +20,43 @@ const data = [
     title: "Feature No 2",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
-    image: people,
+    image: people2,
   },
   {
     title: "Feature No 3",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
-    image: people,
+    image: people3,
   },
   {
     title: "Feature No 4",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
-    image: people,
+    image: people4,
   },
   {
     title: "Feature No 5",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
-    image: people,
+    image: people5,
   },
   {
     title: "Feature No 6",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
-    image: people,
+    image: people6,
   },
   {
     title: "Feature No 7",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
-    image: people,
+    image: people7,
   },
   {
     title: "Feature No 8",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
-    image: people,
+    image: people8,
   },
 ];
 
