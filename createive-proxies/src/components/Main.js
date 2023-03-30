@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <Box w="80%" m="auto">
       <Box
-        mb="2%"
+        mb={["62px", "62px", "42px"]}
         display={"flex"}
         justifyContent="center"
         flexDirection={"column"}
@@ -60,6 +60,7 @@ const Main = () => {
                 padding="10px"
                 fontSize={"8px"}
                 textAlign="justify"
+                w="47px"
               >
                 V<span style={{ fontSize: "18px" }}>4</span>
               </Text>
@@ -100,7 +101,12 @@ const Main = () => {
             <Text mb="10px" textAlign={"justify"}>
               Plan Includes :
             </Text>
-            <Box display={"flex"} gap="8px">
+            <Box
+              display={"flex"}
+              // justifyContent="center"
+              alignItems={"center"}
+              gap="8px"
+            >
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -110,7 +116,7 @@ const Main = () => {
               />
               <Text mt="-4px">100 Threads</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -120,7 +126,7 @@ const Main = () => {
               />
               <Text mt="-4px">Dedicated IP Pool</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -130,7 +136,7 @@ const Main = () => {
               />
               <Text mt="-4px">Residential Proxy</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -140,7 +146,7 @@ const Main = () => {
               />
               <Text mt="-4px">Unlimited Bandwidth</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -150,7 +156,7 @@ const Main = () => {
               />
               <Text mt="-4px">Worldwide Locations</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -199,6 +205,7 @@ const Main = () => {
                 border={"1px solid "}
                 padding="10px"
                 fontSize={"8px"}
+                w="47px"
               >
                 V<span style={{ fontSize: "18px" }}>6</span>
               </Text>
@@ -237,7 +244,7 @@ const Main = () => {
             mb="21px"
           >
             <Text mb="10px">Plan Includes :</Text>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -247,7 +254,7 @@ const Main = () => {
               />
               <Text mt="-4px">100 Threads</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -257,7 +264,7 @@ const Main = () => {
               />
               <Text mt="-4px">Dedicated IP Pool</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -267,7 +274,7 @@ const Main = () => {
               />
               <Text mt="-4px">Residential Proxy</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -277,7 +284,7 @@ const Main = () => {
               />
               <Text mt="-4px">Unlimited Bandwidth</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -287,7 +294,7 @@ const Main = () => {
               />
               <Text mt="-4px">Worldwide Locations</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -297,7 +304,7 @@ const Main = () => {
               />
               <Text mt="-4px">Dedicated Subnets</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -307,7 +314,7 @@ const Main = () => {
               />
               <Text mt="-4px">1 Octilion IPS</Text>
             </Box>
-            <Box display={"flex"} gap="8px">
+            <Box display={"flex"} alignItems={"center"} gap="8px">
               <Img
                 textAlign={"center"}
                 w="12.5px"
@@ -435,12 +442,12 @@ const Main = () => {
 
       {/* customer lover   */}
       <Box
-        mt="8.5%"
+        mt={["220px", "220px", "180px"]}
         display={"flex"}
         justifyContent="center"
         flexDirection={"column"}
         alignItems="center"
-        mb="34px"
+        mb={["40px", "40px", "34px"]}
       >
         <Heading mb="10px" lineHeight={"43.2px"} fontSize={"36px"}>
           Customers <span style={{ color: "#16D113" }}>Love</span> our Proxies
@@ -566,18 +573,13 @@ const Main = () => {
       </Box>
       {/*    empty box part start    */}
       <Box
-        bg="#F6FAFF"
+        bg={[null, null, "#F6FAFF"]}
         borderRadius={"5px"}
-        border="1px solid #1E1E1E1A"
-        mb="10%"
-        mt={"11%"}
+        border={[null, null, "1px solid #1E1E1E1A"]}
+        mb="6.25%"
+        mt={"240px"}
       >
-        <Box
-          // p="65px 40px 35px 40px"
-
-          alignItems="center"
-          mt="40px"
-        >
+        <Box alignItems="center" mt="60px">
           <Text mb="10px" size="md" lineHeight={"43.2px"} fontSize={"36px"}>
             Read our <span style={{ color: "#077BFF" }}>Exclusive</span> Blog
           </Text>
@@ -590,27 +592,28 @@ const Main = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
             augue sit amet mollis molestie.
           </Text>
-          <Text mt="10px" color={"#077BFF"}>
+          <Text mb="20px" mt="10px" color={"#077BFF"}>
             Read All Blogs{" "}
             <Icon pt="15px" fontSize={"25px"} as={AiOutlineArrowRight} />
           </Text>
         </Box>
         {/*************   empty box section */}
         <Box
-          p="30px"
+          p="20px"
           display={"grid"}
           gridTemplateColumns={[
             "repeat(2,1fr)",
             "repeat(2,1fr)",
             "repeat(3,1fr)",
           ]}
-          gap="15px"
+          // gap="5px"
+          justifyContent="space-evenly"
           m="auto"
           textAlign={"left"}
         >
           <Box w="100%">
             <Box
-              w={"90%"}
+              w={"95%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
@@ -618,11 +621,11 @@ const Main = () => {
               borderRadius="5px"
             ></Box>
             <Box>
-              <Box pl={["35px", "35px", "18px"]}>
-                <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+              <Box pb="15px" pl="10px">
+                <Text mt="11px" fontSize={["20px", "20px", "20px"]}>
                   Blog Title appear here
-                </Heading>
-                <Text color={"#111822"} mt="1px">
+                </Text>
+                <Text color={"#111822"} opacity="0.5">
                   Category name here
                 </Text>
               </Box>
@@ -630,25 +633,25 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w={"90%"}
+              w={"95%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
               borderRadius="5px"
             ></Box>
-            <Box pl={["35px", "35px", "18px"]}>
-              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+            <Box pb="15px" pl="10px">
+              <Text mt="11px" fontSize="20px">
                 Blog Title appear here
-              </Heading>
-              <Text color={"#111822"} mt="1px">
+              </Text>
+              <Text color="#111822" opacity="0.5">
                 Category name here
               </Text>
             </Box>
           </Box>
           <Box>
             <Box
-              w={"90%"}
+              w={"95%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
@@ -656,65 +659,65 @@ const Main = () => {
               borderRadius="5px"
             ></Box>
 
-            <Box pl={["35px", "35px", "18px"]}>
-              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+            <Box pb="15px" pl="10px">
+              <Text mt="11px" fontSize="20px">
                 Blog Title appear here
-              </Heading>
-              <Text color={"#111822"} mt="1px">
+              </Text>
+              <Text color={"#111822"} opacity="0.5">
                 Category name here
               </Text>
             </Box>
           </Box>
           <Box>
             <Box
-              w={"90%"}
+              w={"95%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
               borderRadius="5px"
             ></Box>
-            <Box pl={["35px", "35px", "18px"]}>
-              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+            <Box pb="15px" pl="10px">
+              <Text mt="11px" fontSize="20px">
                 Blog Title appear here
-              </Heading>
-              <Text color={"#111822"} mt="1px">
+              </Text>
+              <Text color={"#111822"} opacity="0.5">
                 Category name here
               </Text>
             </Box>
           </Box>
           <Box display={{ lg: "block", md: "none", sm: "none", base: "none" }}>
             <Box
-              w={"90%"}
+              w={"95%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
               borderRadius="5px"
             ></Box>
-            <Box pl={["35px", "35px", "18px"]}>
-              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+            <Box pb="15px" pl="10px">
+              <Text mt="11px" fontSize="20px">
                 Blog Title appear here
-              </Heading>
-              <Text color={"#111822"} mt="1px">
+              </Text>
+              <Text color={"#111822"} opacity="0.5">
                 Category name here
               </Text>
             </Box>
           </Box>
           <Box display={{ lg: "block", md: "none", sm: "none", base: "none" }}>
             <Box
-              w={"90%"}
+              w={"95%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
               border={"1px solid #077BFF80"}
               borderRadius="5px"
             ></Box>
-            <Box pl={["35px", "35px", "18px"]}>
-              <Heading mt="11px" fontSize={["15px", "15px", "20px"]}>
+            <Box pb="15px" pl="10px">
+              <Text mt="11px" fontSize="20px">
                 Blog Title appear here
-              </Heading>
-              <Text color={"#111822"} mt="1px">
+              </Text>
+              <Text color={"#111822"} opacity="0.5">
                 Category name here
               </Text>
             </Box>

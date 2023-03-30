@@ -50,7 +50,7 @@ const Home = () => {
         lineHeight="19px"
         textAlign="center"
         color="#111822"
-        mt="5%"
+        mt={["100px", "100px", "95px"]}
         opacity={"0.5"}
       >
         WELCOME TO THE CREATIVE PROXIES
@@ -97,15 +97,14 @@ const Home = () => {
 
       <Box
         backgroundColor="#077BFF"
-        w={["50%", "50%", "12%"]}
+        w={["222px", "222px", "222px"]}
         h={["43px", "43px", "47px"]}
-        p="10px"
+        m="auto"
+        display={"flex"}
         justifyContent={"center"}
         alignItems="center"
-        m="auto"
-        gap="5px"
-        display={"flex"}
         mt="26px"
+        gap="2"
         textAlign="center"
         borderRadius="10px"
         onClick={handleClick}
@@ -114,7 +113,6 @@ const Home = () => {
         <Text
           textAlign={"center"}
           h="22px"
-          m="auto"
           fontWeight="600"
           fontSize="18px"
           lineHeight="22px"
@@ -129,7 +127,7 @@ const Home = () => {
         background="rgba(0, 182, 122, 0.1)"
         borderRadius="10px"
         textAlign={"center"}
-        w={["50%", "50%", "15%"]}
+        w="222px"
         m="auto"
         mt="20px"
         h={["80px", "80px", "90px"]}
@@ -171,7 +169,7 @@ const Home = () => {
               display={"flex"}
               alignItems="center"
               justifyContent={"space-around"}
-              w="90%"
+              w="100%"
               boxSizing="border-box"
               h="96px"
             >

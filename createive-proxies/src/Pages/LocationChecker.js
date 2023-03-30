@@ -12,6 +12,26 @@ import {
   Td,
   TableContainer,
 } from "@chakra-ui/react";
+const tableData = [
+  {
+    ip: "8.8.8.8",
+    proxy: "192.168.0.0",
+    city: "New York",
+    country: "US",
+  },
+  {
+    ip: "1.1.1.1",
+    proxy: "192.168.0.0",
+    city: "Los Angeles",
+    country: "US",
+  },
+  {
+    ip: "192.168.1.1",
+    proxy: "192.168.0.0",
+    city: "San Diego",
+    country: "US",
+  },
+];
 
 const LocationChecker = () => {
   return (
@@ -125,42 +145,100 @@ const LocationChecker = () => {
         textAlign={"justify"}
         boxSizing="border-box"
         border="1px solid rgba(0, 0, 0, 0.25)"
-        bordeRadius="5px"
+        bordeRadius="10px"
         w={["100%", "100%", "48%"]}
         m="auto"
       >
-        <TableContainer>
-          <Table variant="simple">
-            <Thead>
-              <Tr
-                background="rgba(0, 0, 0, 0.1)"
-                // border="1px solid rgba(0, 0  , 0, 0.25)"
-              >
-                <Th>IP</Th>
-                <Th>PROXY</Th>
-                <Th>CITY</Th>
-                <Th>COUNTRY</Th>
+        {" "}
+        <TableContainer data-aos="flip-right" w="100%">
+          <Table>
+            <Thead bg="rgba(0, 0, 0, 0.1)">
+              <Tr border="1px solid rgba(0, 0, 0, 0.25)">
+                <Th
+                  p={[2, 2, 4, 4, 4]}
+                  fontSize={["12px", "12px", "14px", "14px", "14px"]}
+                  fontWeight="600"
+                  lineHeight={"16.8px"}
+                  opacity="0.6"
+                  color="#111822"
+                >
+                  IP
+                </Th>
+                <Th
+                  p={[2, 2, 4, 4, 4]}
+                  fontSize={["12px", "12px", "14px", "14px", "14px"]}
+                  fontWeight="600"
+                  lineHeight={"16.8px"}
+                  opacity="0.6"
+                  color="#111822"
+                >
+                  PROXY
+                </Th>
+                <Th
+                  p={[2, 2, 4, 4, 4]}
+                  fontSize={["12px", "12px", "14px", "14px", "14px"]}
+                  fontWeight="600"
+                  lineHeight={"16.8px"}
+                  opacity="0.6"
+                  color="#111822"
+                >
+                  CITY
+                </Th>
+                <Th
+                  p={[2, 2, 4, 4, 4]}
+                  fontSize={["12px", "12px", "14px", "14px", "14px"]}
+                  fontWeight="600"
+                  lineHeight={"16.8px"}
+                  opacity="0.6"
+                  color="#111822"
+                >
+                  COUNTRY
+                </Th>
               </Tr>
             </Thead>
             <Tbody>
-              <Tr>
-                <Td>8.8.8.8</Td>
-                <Td>192.168.00</Td>
-                <Td>New York</Td>
-                <Td>US</Td>
-              </Tr>
-              <Tr>
-                <Td>1.1.1.1</Td>
-                <Td>192.168.00</Td>
-                <Td>Los Angeles</Td>
-                <Td>US</Td>
-              </Tr>
-              <Tr>
-                <Td>198.168.1.1</Td>
-                <Td>192.168.00</Td>
-                <Td>San Dego</Td>
-                <Td>US</Td>
-              </Tr>
+              {tableData.map((el) => {
+                return (
+                  <Tr bg="rgba(217, 216, 214, 0.05)" borderRadius={"5px"}>
+                    <Td
+                      p={[2, 2, 3, 3, 4]}
+                      fontSize={["12px", "12px", "14px", "14px", "14px"]}
+                      fontWeight="500"
+                      lineHeight={"16.8px"}
+                      color="#111822"
+                    >
+                      {el.ip}
+                    </Td>
+                    <Td
+                      p={[2, 2, 3, 3, 4]}
+                      fontSize={["12px", "12px", "14px", "14px", "14px"]}
+                      fontWeight="500"
+                      lineHeight={"16.8px"}
+                      color="#111822"
+                    >
+                      {el.proxy}
+                    </Td>
+                    <Td
+                      p={[2, 2, 3, 3, 4]}
+                      fontSize={["12px", "12px", "14px", "14px", "14px"]}
+                      fontWeight="500"
+                      lineHeight={"16.8px"}
+                      color="#111822"
+                    >
+                      {el.city}
+                    </Td>
+                    <Td
+                      p={[2, 2, 3, 3, 4]}
+                      fontSize={["12px", "12px", "14px", "14px", "14px"]}
+                      fontWeight="500"
+                      lineHeight={"16.8px"}
+                      color="#111822"
+                    >
+                      {el.country}
+                    </Td>
+                  </Tr>
+                );
+              })}
             </Tbody>
           </Table>
         </TableContainer>
@@ -171,7 +249,7 @@ const LocationChecker = () => {
         justifyContent={"space-between"}
         w={["100%", "100%", "38%"]}
         m="auto"
-        mt="2%"
+        mt="45px"
       >
         <Text fontWeight={"500"} fontSize="18px" lineHeight={"22px"} mt="1%">
           Check out our IPv6 Compatibility Checker

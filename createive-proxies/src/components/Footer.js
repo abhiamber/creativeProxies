@@ -11,8 +11,9 @@ const Footer = () => {
       fontFamily="Figtree"
       fontStyle="normal"
       letterSpacing="-0.02em"
+      mt="45px"
     >
-      <Box h="0" mt="7%" mb="2%" border="1px solid #D9D8D6"></Box>
+      <Box h="0" mb="34px" border="1px solid #D9D8D6"></Box>
 
       <Box
         display={["block", "block", "grid"]}
@@ -21,8 +22,7 @@ const Footer = () => {
           "repeat(1,1fr)",
           "repeat(2,1fr)",
         ]}
-        mb="2%"
-        mt="1%"
+        mb="34px"
         justifyContent="space-between"
         alignItems={"center"}
       >
@@ -31,20 +31,29 @@ const Footer = () => {
           justifyContent="space-between"
         >
           <Box>
-            <Box display={"flex"} gap="7.42px">
+            <Box
+              display={"flex"}
+              gap="7.42px"
+              // justifyContent={"center"}
+              alignItems="center"
+            >
               <Image
                 w={["10%", "10%", "7%"]}
                 src={creativeproxies}
                 alt="logo"
               />
-              <Text fontSize={["20px", "20px", "26px"]} fontWeight="600">
+              <Text
+                color={"#111822"}
+                fontSize={["16px", "16px", "20px", "22px", "22px"]}
+                fontWeight="600"
+              >
                 CreativeProxies
               </Text>
             </Box>
             <Text
               fontSize={"14px"}
               fontWeight="400"
-              color={"#111822"}
+              color={"#969493"}
               lineHeight={"20px"}
               w={["75%", "75%", "68%"]}
               m="5px"
@@ -83,9 +92,10 @@ const Footer = () => {
 
         <Box
           display={"flex"}
-          justifyContent="center"
-          gap={["65px", "80px", "100px"]}
+          justifyContent="space-between"
+          // gap={["39px", "39px", ""]}
           mt={["15px", null, null]}
+          lineHeight="16.8px"
         >
           <Box>
             <Text
@@ -101,7 +111,7 @@ const Footer = () => {
               mt="10px"
               lineHeight={"24.2px"}
               fontWeight={"500"}
-              fontSize={"16px"}
+              fontSize={["12px", "14px", "16px"]}
               textAlign="justify"
               opacity={0.75}
             >

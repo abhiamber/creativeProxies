@@ -27,8 +27,8 @@ const Navbar = () => {
   let navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  let handleClick = () => {
-    navigate("/");
+  let handleClick = (path) => {
+    navigate(`/${path}`);
   };
   return (
     <Box
@@ -40,8 +40,8 @@ const Navbar = () => {
     >
       <Box
         display={{ lg: "none", md: "flex", sm: "flex", base: "flex" }}
-        pt="10px"
-        pb="10px"
+        pt="20px"
+        pb="20px"
       >
         <Box
           h="33px"
@@ -119,12 +119,14 @@ const Navbar = () => {
         justifyContent={"center"}
         alignItems="center"
         p="5px"
+        pt="18px"
+        pb="18px"
       >
         <Box
           h="33px"
           display={"flex"}
           justifyContent="center"
-          onClick={handleClick}
+          onClick={() => handleClick("")}
           cursor="pointer"
         >
           <Image width="17%" height="33px" src={creativeproxies} alt="logo" />
@@ -276,6 +278,8 @@ const Navbar = () => {
           height="39px"
           background="#077BFF"
           borderRadius="5px"
+          onClick={() => handleClick("location")}
+          cursor="pointer"
         >
           <Text
             height="19px"
