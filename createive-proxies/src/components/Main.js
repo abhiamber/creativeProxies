@@ -44,7 +44,7 @@ const Main = () => {
         <Box
           borderRadius={"5px"}
           border={"1px solid #1E1E1E1A"}
-          w={["86%", "66%", "33%"]}
+          w={["100%", "80%", "33%"]}
           bg="#1E1E1E03"
         >
           <Box display={"flex"} gap="80px">
@@ -75,14 +75,14 @@ const Main = () => {
                 FROM
               </Text>
               <Text>
-                <span style={{ fontSize: "18px", color: "#077BFF" }}>
+                <span style={{ fontSize: "16px", color: "#077BFF" }}>
                   $4.75
                 </span>
                 /day
               </Text>
               <Text fontSize={"12px"}>OR</Text>
               <Text>
-                <span style={{ fontSize: "18px", color: "#077BFF" }}>
+                <span style={{ fontSize: "16px", color: "#077BFF" }}>
                   $116.75
                 </span>
                 /mo
@@ -183,15 +183,13 @@ const Main = () => {
           borderRadius={"5px"}
           border={"1px solid #16D113"}
           // h="495px"
-          w={["86%", "66%", "33%"]}
+          w={["100%", "80%", "33%"]}
           bg="#16D1131A"
           textAlign={"justify"}
         >
           <Box display={"flex"} gap="80px">
             <Box p="26px 0 14px 28px">
               <Text
-                // w="40px"
-                // h="35px"
                 display={"flex"}
                 justifyContent="center"
                 alignItems={"center"}
@@ -216,14 +214,14 @@ const Main = () => {
                 FROM
               </Text>
               <Text>
-                <span style={{ fontSize: "18px", color: "#16D113" }}>
+                <span style={{ fontSize: "16px", color: "#16D113" }}>
                   $4.75
                 </span>
                 /day
               </Text>
               <Text fontSize={"12px"}>OR</Text>
               <Text>
-                <span style={{ fontSize: "18px", color: "#16D113" }}>
+                <span style={{ fontSize: "16px", color: "#16D113" }}>
                   $116.75
                 </span>
                 /mo
@@ -447,7 +445,11 @@ const Main = () => {
         <Heading mb="10px" lineHeight={"43.2px"} fontSize={"36px"}>
           Customers <span style={{ color: "#16D113" }}>Love</span> our Proxies
         </Heading>
-        <Text w="465px" lineHeight={"21.6px"} fontSize={"18px"}>
+        <Text
+          w={["100%", "100%", "465px"]}
+          lineHeight={"21.6px"}
+          fontSize={"18px"}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus
           augue sit amet mollis molestie.
         </Text>
@@ -594,7 +596,6 @@ const Main = () => {
         </Box>
         {/*************   empty box section */}
         <Box
-          // p="0 40px"
           p="30px"
           display={"grid"}
           gridTemplateColumns={[
@@ -604,13 +605,11 @@ const Main = () => {
           ]}
           gap="15px"
           m="auto"
-          // justifyContent={"center"}
-          // alignItems="center"
           textAlign={"left"}
         >
           <Box w="100%">
             <Box
-              w={["70%", "70%", "90%"]}
+              w={"90%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
@@ -630,7 +629,7 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w={["70%", "70%", "90%"]}
+              w={"90%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
@@ -648,7 +647,7 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w={["70%", "70%", "90%"]}
+              w={"90%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"
@@ -667,7 +666,7 @@ const Main = () => {
           </Box>
           <Box>
             <Box
-              w={["70%", "70%", "90%"]}
+              w={"90%"}
               m="auto"
               h="221px"
               bg="#077BFF1A"

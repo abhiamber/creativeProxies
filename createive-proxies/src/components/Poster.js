@@ -2,6 +2,57 @@ import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import people from "../Image/people.png";
 
+const data = [
+  {
+    title: "Feature No 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+    image: people,
+  },
+  {
+    title: "Feature No 2",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+    image: people,
+  },
+  {
+    title: "Feature No 3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+    image: people,
+  },
+  {
+    title: "Feature No 4",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+    image: people,
+  },
+  {
+    title: "Feature No 5",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+    image: people,
+  },
+  {
+    title: "Feature No 6",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+    image: people,
+  },
+  {
+    title: "Feature No 7",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+    image: people,
+  },
+  {
+    title: "Feature No 8",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+    image: people,
+  },
+];
+
 const Poster = () => {
   return (
     <Box w="80%" m="auto" p="20px" pt="80px" pb="80px">
@@ -18,10 +69,9 @@ const Poster = () => {
       </Text>
 
       <Text
-        w={["75%", "75%", "35%"]}
+        w={["80%", "80%", "35%"]}
         lineHeight={"22px"}
         fontWeight="500"
-        // h="44px"
         color="#FFFFFF"
         fontSize={"18px"}
         opacity="0.5"
@@ -41,255 +91,39 @@ const Poster = () => {
         gap="5"
         mt="2%"
       >
-        <Box
-          background="rgba(255, 255, 255, 0.03)"
-          border="1px solid rgba(255, 255, 255, 0.25)"
-          borderRadius="5px"
-          p="20px"
-          textAlign={"justify"}
-        >
-          <Image src={people} alt="" opacity="0.4" />
-          <Text
-            fontWeight="600"
-            fontSize="20px"
-            lineHeight="24px"
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            Feature No 1
-          </Text>
-          <Text
-            fontWeight="400"
-            fontSize="14px"
-            lineHeight="17px"
-            opacity={"0.5"}
-            color="#FFFFFF"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies interdum eros non suscipit.
-          </Text>
-        </Box>
-
-        <Box
-          background="rgba(255, 255, 255, 0.03)"
-          border="1px solid rgba(255, 255, 255, 0.25)"
-          borderRadius="5px"
-          p="20px"
-          textAlign={"justify"}
-        >
-          <Image src={people} alt="" />
-          <Text
-            fontWeight="600"
-            fontSize="20px"
-            lineHeight="24px"
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            Feature No 1
-          </Text>
-          <Text
-            fontWeight="400"
-            fontSize="14px"
-            lineHeight="17px"
-            opacity={"0.5"}
-            color="#FFFFFF"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies interdum eros non suscipit.
-          </Text>
-        </Box>
-
-        <Box
-          background="rgba(255, 255, 255, 0.03)"
-          border="1px solid rgba(255, 255, 255, 0.25)"
-          borderRadius="5px"
-          p="20px"
-          textAlign={"justify"}
-        >
-          <Image src={people} alt="" />
-          <Text
-            fontWeight="600"
-            fontSize="20px"
-            lineHeight="24px"
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            Feature No 1
-          </Text>
-          <Text
-            fontWeight="400"
-            fontSize="14px"
-            lineHeight="17px"
-            opacity={"0.5"}
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies interdum eros non suscipit.
-          </Text>
-        </Box>
-
-        <Box
-          background="rgba(255, 255, 255, 0.03)"
-          border="1px solid rgba(255, 255, 255, 0.25)"
-          borderRadius="5px"
-          p="20px"
-          textAlign={"justify"}
-        >
-          <Image src={people} alt="" />
-          <Text
-            fontWeight="600"
-            fontSize="20px"
-            lineHeight="24px"
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            Feature No 1
-          </Text>
-          <Text
-            fontWeight="400"
-            fontSize="14px"
-            lineHeight="17px"
-            opacity={"0.5"}
-            color="#FFFFFF"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies interdum eros non suscipit.
-          </Text>
-        </Box>
-
-        <Box
-          background="rgba(255, 255, 255, 0.03)"
-          border="1px solid rgba(255, 255, 255, 0.25)"
-          borderRadius="5px"
-          p="20px"
-          textAlign={"justify"}
-        >
-          <Image src={people} alt="" />
-          <Text
-            fontWeight="600"
-            fontSize="20px"
-            lineHeight="24px"
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            Feature No 1
-          </Text>
-          <Text
-            fontWeight="400"
-            fontSize="14px"
-            lineHeight="17px"
-            opacity={"0.5"}
-            color="#FFFFFF"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies interdum eros non suscipit.
-          </Text>
-        </Box>
-
-        <Box
-          background="rgba(255, 255, 255, 0.03)"
-          border="1px solid rgba(255, 255, 255, 0.25)"
-          borderRadius="5px"
-          p="20px"
-          textAlign={"justify"}
-        >
-          <Image src={people} alt="" />
-          <Text
-            fontWeight="600"
-            fontSize="20px"
-            lineHeight="24px"
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            Feature No 1
-          </Text>
-          <Text
-            fontWeight="400"
-            fontSize="14px"
-            lineHeight="17px"
-            opacity={"0.5"}
-            color="#FFFFFF"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies interdum eros non suscipit.
-          </Text>
-        </Box>
-
-        <Box
-          background="rgba(255, 255, 255, 0.03)"
-          border="1px solid rgba(255, 255, 255, 0.25)"
-          borderRadius="5px"
-          p="20px"
-          textAlign={"justify"}
-        >
-          <Image src={people} alt="" />
-          <Text
-            fontWeight="600"
-            fontSize="20px"
-            lineHeight="24px"
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            Feature No 1
-          </Text>
-          <Text
-            fontWeight="400"
-            fontSize="14px"
-            lineHeight="17px"
-            opacity={"0.5"}
-            color="#FFFFFF"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies interdum eros non suscipit.
-          </Text>
-        </Box>
-
-        <Box
-          background="rgba(255, 255, 255, 0.03)"
-          border="1px solid rgba(255, 255, 255, 0.25)"
-          borderRadius="5px"
-          p="20px"
-          textAlign={"justify"}
-        >
-          <Image src={people} alt="" />
-          <Text
-            fontWeight="600"
-            fontSize="20px"
-            lineHeight="24px"
-            color="#FFFFFF"
-            pt="5px"
-            pb="5px"
-          >
-            Feature No 1
-          </Text>
-          <Text
-            fontWeight="400"
-            fontSize="14px"
-            lineHeight="17px"
-            opacity={"0.5"}
-            color="#FFFFFF"
-          >
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies interdum eros non suscipit.
-          </Text>
-        </Box>
+        {data.map((item, index) => {
+          return (
+            <Box
+              background="rgba(255, 255, 255, 0.03)"
+              border="1px solid rgba(255, 255, 255, 0.25)"
+              borderRadius="5px"
+              p={["15px", "15px", "20px"]}
+              textAlign={"justify"}
+              key={index}
+            >
+              <Image src={item?.image} alt="" />
+              <Text
+                fontWeight="600"
+                fontSize={["16px", "16px", "20px"]}
+                lineHeight="24px"
+                color="#FFFFFF"
+                pt="5px"
+                pb="5px"
+              >
+                {item?.title}
+              </Text>
+              <Text
+                fontWeight="400"
+                fontSize="14px"
+                lineHeight="17px"
+                opacity={"0.5"}
+                color="#FFFFFF"
+              >
+                {item?.description}
+              </Text>
+            </Box>
+          );
+        })}
       </Box>
     </Box>
   );

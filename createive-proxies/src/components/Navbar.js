@@ -62,8 +62,8 @@ const Navbar = () => {
           </Text>
         </Box>
         <Box
-          padding="10px"
-          width="30%"
+          padding={["0px", "5px", "10px"]}
+          width={["15%", "20%", "30%"]}
           m="auto"
           mr="3px"
           height="39px"
@@ -73,7 +73,7 @@ const Navbar = () => {
           <Text
             height="19px"
             fontWeight="400"
-            fontSize="16px"
+            fontSize={["12px", "13px", "16px"]}
             lineHeight="19px"
             color="#FFFFFF"
           >

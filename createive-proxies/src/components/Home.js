@@ -1,10 +1,34 @@
-import { Box, Button, Image, Text } from "@chakra-ui/react";
-import { Link, useNavigate } from "react-router-dom";
+import { Box, Image, Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import get1 from "../Image/get1.png";
 import Frame6 from "../Image/Frame6.png";
 import Frame7 from "../Image/Frame7.png";
 import square from "../Image/square.png";
+
+const data = [
+  {
+    title: "Lorem Ipsun",
+    description: "Dolor Sit Amet Top",
+    image: square,
+  },
+  {
+    title: "Lorem Ipsun",
+    description: "Dolor Sit Amet Top",
+    image: square,
+  },
+  {
+    title: "Lorem Ipsun",
+    description: "Dolor Sit Amet Top",
+    image: square,
+  },
+  {
+    title: "Lorem Ipsun",
+    description: "Dolor Sit Amet Top",
+    image: square,
+  },
+];
+
 const Home = () => {
   let navigate = useNavigate();
 
@@ -24,6 +48,7 @@ const Home = () => {
       >
         WELCOME TO THE CREATIVE PROXIES
       </Box>
+
       <Box
         w={["88%", "88%", "68%"]}
         textAlign={"center"}
@@ -32,7 +57,6 @@ const Home = () => {
         fontSize={["36px", "36px", "56px"]}
         lineHeight={["40px", "40px", "67px"]}
         color="#111822"
-        // display={"flex"}
       >
         <Text display={"inline"}>We are the </Text>
         <Text display={"inline"} color="#077BFF">
@@ -63,9 +87,10 @@ const Home = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue
         sit amet mollis molestie.
       </Box>
+
       <Box
         backgroundColor="#077BFF"
-        w={["25%", "25%", "12%"]}
+        w={["50%", "50%", "12%"]}
         h={["43px", "43px", "47px"]}
         p="10px"
         justifyContent={"center"}
@@ -97,7 +122,7 @@ const Home = () => {
         background="rgba(0, 182, 122, 0.1)"
         borderRadius="10px"
         textAlign={"center"}
-        w={["28%", "28%", "15%"]}
+        w={["50%", "50%", "15%"]}
         m="auto"
         mt="20px"
         h={["80px", "80px", "90px"]}
@@ -105,11 +130,11 @@ const Home = () => {
         display={"flex"}
         flexDir="column"
         alignItems={"center"}
-        // gap="6"
       >
         <Image src={Frame7} alt="" />
         <Image src={Frame6} alt="" />
       </Box>
+
       <Text
         width="32%"
         height="0px"
@@ -130,148 +155,42 @@ const Home = () => {
           "repeat(4,1fr)",
         ]}
       >
-        <Box
-          background=" #EEFEFD"
-          border="1px solid #D4EAE8"
-          borderRadius="5px"
-          display={"flex"}
-          alignItems="center"
-          justifyContent={"space-around"}
-          w="90%"
-          // pl="24px"
-          // pr="20px"
-          // transform="matrix(1, 0, 0, -1, 0, 0)"
-          boxSizing="border-box"
-          h="96px"
-        >
-          <Image
-            w="18%"
-            h="40px"
-            src={square}
-            alt=""
-            background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
-            borderRadius="8px"
-          />
-          <Box
-            color="#111822"
-            opacity="0.8"
-            textAlign={"justify"}
-            // pl="8px"
-            fontWeight="400"
-            fontSize="18px"
-            lineHeight="22px"
-          >
-            <Text> Lorem Ipsum</Text>
-            <Text>Dolor Sit Amet Top</Text>
-          </Box>
-        </Box>
-        <Box
-          background=" #EEFEFD"
-          border="1px solid #D4EAE8"
-          borderRadius="5px"
-          display={"flex"}
-          alignItems="center"
-          justifyContent={"space-around"}
-          w="90%"
-          // pl="24px"
-          // pr="20px"
-          // transform="matrix(1, 0, 0, -1, 0, 0)"
-          boxSizing="border-box"
-          h="96px"
-        >
-          <Image
-            w="18%"
-            h="40px"
-            src={square}
-            alt=""
-            background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
-            borderRadius="8px"
-          />
-          <Box
-            color="#111822"
-            opacity="0.8"
-            textAlign={"justify"}
-            pl="8px"
-            fontWeight="400"
-            fontSize="18px"
-            lineHeight="22px"
-          >
-            <Text> Lorem Ipsum</Text>
-            <Text>Dolor Sit Amet Top</Text>
-          </Box>
-        </Box>
-
-        <Box
-          background=" #EEFEFD"
-          border="1px solid #D4EAE8"
-          borderRadius="5px"
-          display={"flex"}
-          alignItems="center"
-          justifyContent={"space-around"}
-          w="90%"
-          // pl="24px"
-          // pr="20px"
-          // transform="matrix(1, 0, 0, -1, 0, 0)"
-          boxSizing="border-box"
-          h="96px"
-        >
-          <Image
-            w="18%"
-            h="40px"
-            src={square}
-            alt=""
-            background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
-            borderRadius="8px"
-          />
-          <Box
-            color="#111822"
-            opacity="0.8"
-            textAlign={"justify"}
-            pl="8px"
-            fontWeight="400"
-            fontSize="18px"
-            lineHeight="22px"
-          >
-            <Text> Lorem Ipsum</Text>
-            <Text>Dolor Sit Amet Top</Text>
-          </Box>
-        </Box>
-
-        <Box
-          background=" #EEFEFD"
-          border="1px solid #D4EAE8"
-          borderRadius="5px"
-          display={"flex"}
-          alignItems="center"
-          justifyContent={"space-around"}
-          w="90%"
-          // pl="24px"
-          // pr="20px"
-          // transform="matrix(1, 0, 0, -1, 0, 0)"
-          boxSizing="border-box"
-          h="96px"
-        >
-          <Image
-            w="18%"
-            h="40px"
-            src={square}
-            alt=""
-            background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
-            borderRadius="8px"
-          />
-          <Box
-            color="#111822"
-            opacity="0.8"
-            textAlign={"justify"}
-            pl="8px"
-            fontWeight="400"
-            fontSize="18px"
-            lineHeight="22px"
-          >
-            <Text> Lorem Ipsum</Text>
-            <Text>Dolor Sit Amet Top</Text>
-          </Box>
-        </Box>
+        {data.map((item, index) => {
+          return (
+            <Box
+              background=" #EEFEFD"
+              border="1px solid #D4EAE8"
+              borderRadius="5px"
+              display={"flex"}
+              alignItems="center"
+              justifyContent={"space-around"}
+              w="90%"
+              boxSizing="border-box"
+              h="96px"
+            >
+              <Image
+                w={["25%", "25%", "18%"]}
+                h={["25px", "25px", "40px"]}
+                src={item?.image}
+                alt={item?.image}
+                background="linear-gradient(135deg, #3BC9FB 0%, #42A6FB 100%)"
+                borderRadius="8px"
+                ml={["2px", "3px", "0px"]}
+              />
+              <Box
+                color="#111822"
+                opacity="0.8"
+                textAlign={["center", "center", "justify"]}
+                fontWeight="400"
+                fontSize={["15px", "15px", "18px"]}
+                lineHeight="22px"
+              >
+                <Text> {item?.title}</Text>
+                <Text>{item?.description}</Text>
+              </Box>
+            </Box>
+          );
+        })}
       </Box>
     </Box>
   );

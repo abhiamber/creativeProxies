@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import creativeproxies from "../Image/creativeproxies.png";
 import discord1 from "../Image/discord1.png";
@@ -8,9 +8,6 @@ const Footer = () => {
     <Box
       w="80%"
       m="auto"
-      //   justifyContent={"center"}
-      //   alignItems="center"
-      //   p="5px"
       fontFamily="Figtree"
       fontStyle="normal"
       letterSpacing="-0.02em"
@@ -18,14 +15,12 @@ const Footer = () => {
       <Box h="0" mt="7%" mb="2%" border="1px solid #D9D8D6"></Box>
 
       <Box
-        display={"grid"}
+        display={["block", "block", "grid"]}
         gridTemplateColumns={[
           "repeat(1,1fr)",
           "repeat(1,1fr)",
           "repeat(2,1fr)",
         ]}
-        // gap="14%"
-        // m="auto"
         mb="2%"
         mt="1%"
         justifyContent="space-between"
@@ -75,7 +70,6 @@ const Footer = () => {
             {" "}
             <Image w="10%" src={discord1} alt="surface1" />
             <Text
-              //   height="19px"
               fontWeight="500"
               fontSize="16px"
               lineHeight="19px"
@@ -90,7 +84,7 @@ const Footer = () => {
         <Box
           display={"flex"}
           justifyContent="center"
-          gap="100px"
+          gap={["65px", "80px", "100px"]}
           mt={["15px", null, null]}
         >
           <Box>
