@@ -174,8 +174,8 @@ const Home = () => {
               h="96px"
             >
               <Image
-                w={["25%", "25%", "18%"]}
-                h={["25px", "25px", "40px"]}
+                w={["15%", "15%", "15%"]}
+                h={["30px", "30px", "38px"]}
                 src={item?.image}
                 alt={item?.image}
                 background={item?.background}
